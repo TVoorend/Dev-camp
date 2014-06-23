@@ -12,7 +12,7 @@ html, body {
 }
 body {
 	padding:0 0 2em;
-	background-color: #e6f4ff;
+	background-color: rgba (230, 244, 255 .9);
 }
 
 body > header {
