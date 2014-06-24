@@ -1,3 +1,5 @@
+var APP = APP || {};
+
 (function(){
 	var scrollTop 	= (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
   		el 			= document.body,
@@ -7,6 +9,24 @@
   		wHeight		= window.innerHeight,
   		$, $$;
 
+
+	// APP.controller = {
+	// 	init: function () {
+	// 		var self = this;
+ // 			utils.init();
+ // 			this.router();
+ //           		drag.init();
+ //           		drag.overlay();
+
+ // 			document.addEventListener('gesturechange', self.scroll, false);
+	// 		document.addEventListener('scroll', self.scroll, false);	
+	// 	},
+		
+	// 	router: function () {
+	// 		// More code
+	// 	}
+	// }
+	
   	var app = {
   		init: function() {
   			var self = this;
