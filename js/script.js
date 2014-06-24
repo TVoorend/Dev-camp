@@ -98,16 +98,18 @@
             jQuery( ".droppable" ).droppable({
                 drop: function() {
 
-                    window.location = "" + jQuery(this).attr('id');
+                window.location = "" + jQuery(this).attr('id');
                 jQuery(".overlay").hide().removeClass("fadein");
-                jQuery('.circle').css({top:"", left:""});
+
+                //Add class instead
+                jQuery('.circle').addClass('topLeftEmpty');
+                
             }
             });
         },
+	
+	//Empty function	
 
-        overlay: function() {
-
-        }
     };
 
     app.init();
